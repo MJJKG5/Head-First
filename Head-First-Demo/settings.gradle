@@ -1,4 +1,4 @@
 rootProject.name = 'Head-First-Demo'
 include 'SimUDuck'
 include 'WeatherORama'
-
+include 'WeatherORama-Observable'
