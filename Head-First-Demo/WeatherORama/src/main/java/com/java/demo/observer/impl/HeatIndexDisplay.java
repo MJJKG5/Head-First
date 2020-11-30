@@ -6,13 +6,7 @@ import com.java.demo.subject.Subject;
 import com.java.demo.WeatherData;
 
 public class HeatIndexDisplay implements Observer, DisplayElement {
-    /**
-     * 主题
-     */
     private final Subject subject;
-    /**
-     * 酷热指数
-     */
     private float heatIndex;
 
     public HeatIndexDisplay(Subject subject) {

@@ -6,21 +6,9 @@ import com.java.demo.subject.Subject;
 import com.java.demo.WeatherData;
 
 public class CurrentConditionsDisplay implements Observer, DisplayElement {
-    /**
-     * 主题
-     */
     private final Subject subject;
-    /**
-     * 温度
-     */
     private float temperature;
-    /**
-     * 湿度
-     */
     private float humidity;
-    /**
-     * 气压
-     */
     private float pressure;
 
     public CurrentConditionsDisplay(Subject subject) {
