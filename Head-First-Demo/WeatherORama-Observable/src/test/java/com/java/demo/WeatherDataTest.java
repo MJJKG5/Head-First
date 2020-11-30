@@ -13,7 +13,7 @@ public class WeatherDataTest {
         WeatherData weatherData = new WeatherData();
 
         // 观察者
-        Observer currentConditions = new CurrentConditionsDisplay(weatherData);
+        new CurrentConditionsDisplay(weatherData);
         Observer heatIndex = new HeatIndexDisplay(weatherData);
 
         // 模拟气象数据
