@@ -7,17 +7,8 @@ import java.util.Observable;
 import java.util.Observer;
 
 public class CurrentConditionsDisplay implements Observer, DisplayElement {
-    /**
-     * 温度
-     */
     private float temperature;
-    /**
-     * 湿度
-     */
     private float humidity;
-    /**
-     * 气压
-     */
     private float pressure;
 
     public CurrentConditionsDisplay(Observable observable) {
