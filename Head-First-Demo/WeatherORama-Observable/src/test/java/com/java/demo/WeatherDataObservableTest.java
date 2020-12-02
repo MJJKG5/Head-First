@@ -6,7 +6,7 @@ import org.junit.Test;
 
 import java.util.Observer;
 
-public class WeatherDataTest {
+public class WeatherDataObservableTest {
     @Test
     public void weatherData() throws InterruptedException {
         // 主题
