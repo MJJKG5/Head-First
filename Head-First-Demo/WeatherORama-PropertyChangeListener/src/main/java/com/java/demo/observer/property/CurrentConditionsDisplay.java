@@ -1,4 +1,4 @@
-package com.java.demo.observer.impl;
+package com.java.demo.observer.property;
 
 import com.java.demo.WeatherData;
 import com.java.demo.observer.DisplayElement;
@@ -17,6 +17,8 @@ public class CurrentConditionsDisplay implements PropertyChangeListener, Display
         this.temperature = weatherData.getTemperature();
         this.humidity = weatherData.getHumidity();
         this.pressure = weatherData.getPressure();
+
+        display();
     }
 
     @Override

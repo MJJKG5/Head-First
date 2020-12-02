@@ -1,21 +1,24 @@
-package com.java.demo.observer.impl;
+package com.java.demo.observer.vetoable;
 
 import com.java.demo.WeatherData;
 import com.java.demo.observer.DisplayElement;
 
 import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
+import java.beans.PropertyVetoException;
+import java.beans.VetoableChangeListener;
 
-public class HeatIndexDisplay implements PropertyChangeListener, DisplayElement {
+public class HeatIndexDisplay implements VetoableChangeListener, DisplayElement {
     private float heatIndex;
 
     @Override
-    public void propertyChange(PropertyChangeEvent evt) {
+    public void vetoableChange(PropertyChangeEvent evt) throws PropertyVetoException {
         WeatherData weatherData = (WeatherData) evt.getNewValue();
         float temperature = weatherData.getTemperature();
         float humidity = weatherData.getHumidity();
 
         heatIndex = computeHeatIndex(temperature, humidity);
+
+        display();
     }
 
     @Override

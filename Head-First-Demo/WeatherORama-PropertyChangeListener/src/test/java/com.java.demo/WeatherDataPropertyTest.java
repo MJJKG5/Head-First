@@ -1,13 +1,13 @@
 package com.java.demo;
 
-import com.java.demo.observer.impl.CurrentConditionsDisplay;
-import com.java.demo.observer.impl.HeatIndexDisplay;
+import com.java.demo.observer.property.CurrentConditionsDisplay;
+import com.java.demo.observer.property.HeatIndexDisplay;
 import org.junit.Test;
 
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;
 
-public class WeatherDataTest {
+public class WeatherDataPropertyTest {
     @Test
     public void weatherData() throws InterruptedException {
         WeatherData weatherData = new WeatherData();
